@@ -13,7 +13,7 @@ void quicksort(int a[], int low, int high) {
         int i = low + 1, j = low + 1;
         
         printf("Pivot: %d\n", pivot);
-        printf("Array state after partitioning:\n");
+        printf("status array yang telah dipartisi :\n");
         for (int k = low; k <= high; k++) {
             printf("%d ", a[k]);
         }
@@ -39,20 +39,20 @@ int main() {
     int a[10];
     int i, n;
     
-    printf("Enter the number of elements: ");
+    printf("Masukan berapa element: ");
     scanf("%d", &n);
     
-    printf("Enter %d elements:\n", n);
+    printf("Masukan %d element :\n", n);
     for (i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
     
     quicksort(a, 0, n - 1);
     
-    printf("Sorted array:\n");
+    printf("Element array yang telah disortir :\n");
     for (i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
-    
+
     return 0;
 }
